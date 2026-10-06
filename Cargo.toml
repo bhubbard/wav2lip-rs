@@ -1,0 +1,31 @@
+[workspace]
+members = [
+    "crates/wav2lip-core",
+    "crates/wav2lip-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Wav2Lip Contributors", "Brandon Hubbard <bhubbard@users.noreply.github.com>"]
+license = "MIT"
+repository = "https://github.com/bhubbard/wav2lip-rs"
+homepage = "https://github.com/bhubbard/wav2lip-rs"
+documentation = "https://github.com/bhubbard/wav2lip-rs#readme"
+readme = "README.md"
+keywords = ["wav2lip", "lip-sync", "audio-driven", "video-editing", "rust"]
+categories = ["multimedia::video", "science", "command-line-utilities"]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.5", features = ["derive", "env"] }
+anyhow = "1.0"
+thiserror = "1.0"
+colored = "2.1"
+safetensors = "0.4"
+hound = "3.5"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+tempfile = "3.12"
+indicatif = "0.17"
