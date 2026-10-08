@@ -1,7 +1,7 @@
 use crate::audio::Wav2LipAudio;
 use crate::config::Wav2LipConfig;
 use crate::face::FaceMasker;
-use anyhow::{Context, Result};
+use anyhow::Result;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
